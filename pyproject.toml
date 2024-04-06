@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyplato"
+version = "24.04a"
+description = "Plato compiler in Python"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+
+authors = [{ name = "Aristocles, son of Ariston" }]
+maintainers = [{ name = "Aristocles, son of Ariston" }]
+keywords = ["plato", "programming", "language", "compiler"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General",
+]
+
+requires-python = ">=3.12"
+#dependencies = []
+[project.optional-dependencies]
+development = [
+    "black", # Auto-formatting
+    "pytest", # Testing
+]
+
+[project.urls]
+"Homepage" = "https://github.com/son-of-ariston/pyplato"
+"Bug Reports" = "https://github.com/son-of-ariston/pyplato/issues"
+"Source" = "https://github.com/son-of-ariston/pyplato"
